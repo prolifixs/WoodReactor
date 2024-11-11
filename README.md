@@ -1,6 +1,6 @@
 # WoodReactor Control Panel
 
-[Screenshot (118)](https://github.com/user-attachments/assets/454ddfad-e6d0-44e7-a19c-336d11f31d5f)
+![Screenshot (118)](https://github.com/user-attachments/assets/78d11a72-9956-416c-befc-b71c0ae44e02)
 
 ## Overview!
 
@@ -58,6 +58,9 @@ WoodReactor is a web-based control panel interface designed to monitor and contr
 - Secure communication channels
 - Robust error handling
 - Data validation and sanitization
+
+![Screenshot (120)](https://github.com/user-attachments/assets/cf24f582-c75f-4ca3-83ff-5aff82144258)
+
 
 ## Component Structure
 
