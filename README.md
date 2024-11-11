@@ -1,6 +1,9 @@
 # WoodReactor Control Panel
 
-## Overview
+[Screenshot (118)](https://github.com/user-attachments/assets/454ddfad-e6d0-44e7-a19c-336d11f31d5f)
+
+## Overview!
+
 WoodReactor is a web-based control panel interface designed to monitor and control a wood gasification system. The application provides real-time monitoring and control capabilities for a wood gasifier, facilitating the conversion of wood biomass into combustible gas through thermochemical processes.
 
 ## System Architecture
