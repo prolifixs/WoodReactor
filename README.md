@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WoodReactor Control Panel
+
+## Overview
+WoodReactor is a web-based control panel interface designed to monitor and control a wood gasification system. The application provides real-time monitoring and control capabilities for a wood gasifier, facilitating the conversion of wood biomass into combustible gas through thermochemical processes.
+
+## System Architecture
+
+### Frontend (React/Next.js)
+- **WoodReactor Component**: Main container component that orchestrates the entire control panel interface
+- **ControlGrid Component**: Manages the layout and organization of various control parameters and monitoring cards
+- **Parameter Controls**: Interface elements for adjusting gasification parameters such as:
+  - Temperature controls
+  - Air flow rates
+  - Pressure monitoring
+  - Moisture content
+  - Feed rate adjustments
+
+### Backend/Hardware Integration
+- Microcontroller integration for:
+  - Data collection from sensors
+  - Real-time process monitoring
+  - Control signal transmission
+  - System state management
+
+## Features
+
+### Real-time Monitoring
+- Temperature readings across different zones
+- Pressure measurements
+- Gas composition analysis
+- System status indicators
+
+### Process Control
+- Parameter adjustment capabilities
+- Emergency shutdown controls
+- Performance optimization settings
+- System state management
+
+### Data Management
+- Historical data logging
+- Performance analytics
+- System health monitoring
+- Alert and notification system
+
+## Technical Stack
+
+### Frontend
+- Next.js 13+ (React framework)
+- TypeScript for type safety
+- Modern React patterns (hooks, context)
+- Responsive design for multiple device support
+
+### Communication
+- WebSocket/HTTP protocols for real-time data
+- Secure communication channels
+- Robust error handling
+- Data validation and sanitization
+
+## Component Structure
+
+### `WoodReactor` (Main Component)
+Primary container managing the overall application state and layout.
+- Handles main system state
+- Coordinates between different sub-components
+- Manages communication with the microcontroller
+
+### `ControlGrid`
+Organizes and displays control interfaces and monitoring panels.
+- Responsive grid layout
+- Dynamic card system for different controls
+- Parameter adjustment interface
+
+### Parameter Management
+- Type-safe parameter handling
+- Validation of input values
+- Real-time update capability
+- Preset management
+
+## Safety Features
+- Input validation and bounds checking
+- Emergency shutdown capabilities
+- Error state handling
+- System status monitoring
+- Alert system for critical conditions
 
 ## Getting Started
 
-First, run the development server:
-
+### Prerequisites
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Node.js 16+
+npm or yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
+```bash
+git clone [repository-url]
+cd woodreactor
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Development
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Production Build
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Configuration
+- Environment variables for system settings
+- Hardware communication parameters
+- Safety limits and thresholds
+- Monitoring intervals
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push to the branch
+5. Create a Pull Request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Safety Considerations
+- Always ensure proper hardware safety mechanisms are in place
+- Regular system maintenance and calibration
+- Backup systems for critical operations
+- Proper operator training required
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
+[MIT License]
 
-## Deploy on Vercel
+## Contact
+[www.woodreactor.com]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Acknowledgments
+- Contributors
+- Related projects
+- Supporting organizations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+**Note**: This control panel is part of a larger wood gasification system. Proper safety measures and professional consultation are required for the physical implementation of the gasification system.
+```
